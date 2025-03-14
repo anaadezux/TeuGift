@@ -1,0 +1,116 @@
+*{
+    font-family: "Great Vibes", cursive;
+    font-weight: 600;
+    background-color: rgb(233, 115, 135);
+}
+.quadrado{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 100vh;
+    width: 100vh;
+    border-radius: 3px;
+    border: none;
+}
+
+.ttime{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#tdays{
+    font-size: 2rem;
+    font-weight: 700;
+    background-color: white;
+    border-radius: 6px;
+    border: none;
+    padding: 3px 7px 3px 3px;
+}
+
+.fotos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#txt1{
+    font-size: 1.5rem;
+    margin-top: 10%;
+    margin-left: 25%;
+}
+#img1{
+    width: 320px;
+    margin-left: 25%;
+}
+
+#txt2{
+    font-size: 1.5rem;
+    margin-top: 10%;
+    margin-right: 25%;
+}
+#img2{
+    width: 320px;
+    margin-right: 25%;
+}
+
+#txt3{
+    font-size: 1.5rem;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+#img3{
+    width: 320px;
+    margin-left: 10%;
+}
+
+.audios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.msg{
+    margin-left: 35%;
+    font-size: 3rem;
+    font-weight: 700;
+    word-spacing: 5px;
+    width: 11ch;
+    border-right: 4px solid white;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: blinkmarker 0.6s infinite,
+                typing 5s infinite steps(11);
+}
+.msg span{
+    color: #F44336;
+}
+@keyframes blinkmarker {
+    50%{
+        border-right-color: transparent;
+    }
+}
+@keyframes typing{
+    0%{
+        width: 0;
+    }
+    40%{
+        width: 11ch;
+    }
+    60%{
+        width: 11ch;
+    }
+    100%{
+        width: 0;
+    }
+}
+#gif{
+    margin-left: 40%;
+    width: 100px;
+}
